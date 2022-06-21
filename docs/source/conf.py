@@ -18,6 +18,7 @@ sys.path.insert(0, os.path.abspath("."))
 # ones.
 # extensions = ["sphinx.ext.autodoc", "sphinx.ext.coverage", "sphinx.ext.ifconfig"]
 extensions = [
+    'rst2pdf.pdfbuilder'
     # "extensions.searchrepair",
     # "extensions.fulltoc",
     # "rinoh.frontend.sphinx",
@@ -217,7 +218,7 @@ latex_domain_indices = True
 pdf_documents = [("index", "PyMuPDF", "PyMuPDF Manual", "Artifex")]
 
 # A comma-separated list of custom stylesheets. Example:
-pdf_stylesheets = ["sphinx", "bahnschrift", "a4"]
+#pdf_stylesheets = ["sphinx", "bahnschrift", "a4"]
 
 # Create a compressed PDF
 pdf_compressed = True
